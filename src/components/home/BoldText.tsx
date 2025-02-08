@@ -94,7 +94,7 @@ const BoldText = () => {
 						<h2
 							ref={textRef}
 							style={textStyle}
-							className=' uppercase font-karlotte text-primary text-left leading-[100%] pb-4 xl:max-w-[700px] max-w-[600px] w-full'
+							className=' uppercase font-karlotte text-primary text-left leading-[120%] pb-4 xl:max-w-[700px] max-w-[600px] w-full'
 						>
 							Building more than just websites
 						</h2>

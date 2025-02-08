@@ -39,7 +39,7 @@ const Services = () => {
 	// };
 
 	return (
-		<section className=' bg-primary w-full h-full relative overflow-x-hidden'>
+		<section className=' bg-primary-light w-full h-full relative overflow-x-hidden pb-20'>
 			<div
 				ref={container}
 				className='flex w-full h-full justify-between flex-col-reverse lg:flex-row gap-20 lg:gap-10'
@@ -63,7 +63,7 @@ const Services = () => {
 
 				<div
 					ref={container2}
-					className='xl:w-[100%] w-full flex justify-center items-center px-4 text-primary-light'
+					className='xl:w-[100%] w-full flex justify-center items-center px-4 text-primary'
 				>
 					<div
 						ref={textRef}

@@ -20,6 +20,7 @@ interface FormData {
 const serviceID: string = import.meta.env.VITE_SERVICE_ID as string;
 const templateID: string = import.meta.env.VITE_TEMPLATE_ID as string;
 const userID: string = import.meta.env.VITE_USER_ID as string;
+const recaptchaKey: string | undefined = import.meta.env.VITE_RECAPTCHA_KEY as string;
 
 const InquiryForm: React.FC = () => {
 	const {
@@ -34,47 +35,34 @@ const InquiryForm: React.FC = () => {
 	const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
 
 	const onSubmit: SubmitHandler<FormData> = async (data) => {
-		// Convert FormData to plain object
-		const formData = {
-			name: data.name,
-			email: data.email,
-			website: data.website,
-			services: data.services,
-			budget: data.budget,
-			about_brand: data.about_brand,
-			launch_date: data.launch_date || "",
-			business_name: data.business_name,
-			find_us: data.find_us || "",
-			additional: data.additional || "",
-		};
+		if (data.honeypot) return; // Honeypot trap for bots
 
-		emailjs.send(serviceID, templateID, formData, userID).then(
-			(result) => {
-				console.log(result.text);
-				alert("Inquiry sent!");
-				reset(); // Reset form after successful submission
-			},
-			(error) => {
-				console.log(error.text);
-				alert("There was an error sending your inquiry.");
-			}
-		);
-
-		setIsSubmitting(true);
+		const lastSubmit = localStorage.getItem("lastSubmit") || "0";
+		const now = Date.now();
+		if (now - parseInt(lastSubmit) < 30000) {
+			alert("You're submitting too fast!");
+			return;
+		}
+		localStorage.setItem("lastSubmit", now.toString());
 
 		try {
-			const result = await emailjs.send(
-				serviceID,
-				templateID,
-				formData,
-				userID
-			);
-			console.log(result.text);
-			setMessage("Inquiry sent!");
+			const token = await recaptchaRef.current?.executeAsync();
+			if (!token) {
+				setMessage("Please complete the CAPTCHA.");
+				setIsSuccess(false);
+				setIsSubmitting(false);
+				return;
+			}
+
+			const formData = { ...data, "g-recaptcha-response": token };
+
+			setIsSubmitting(true);
+			await emailjs.send(serviceID, templateID, formData, userID);
+			setMessage("Your inquiry has been sent!");
 			setIsSuccess(true);
 			reset();
-		} catch (error: any) {
-			console.log(error.text);
+		} catch (error) {
+			console.error("Error sending email:", error);
 			setMessage("There was an error sending your inquiry.");
 			setIsSuccess(false);
 		} finally {
@@ -97,6 +85,10 @@ const InquiryForm: React.FC = () => {
 			onSubmit={handleSubmit(onSubmit)}
 			className='flex flex-col gap-8 text-sm font-suisse w-full'
 		>
+			<input type='hidden' {...register("honeypot")} />
+			{recaptchaKey && (
+				<ReCAPTCHA ref={recaptchaRef} sitekey={recaptchaKey} size='invisible' />
+			)}
 			<div className='flex xl:flex-row flex-col gap-3 w-full'>
 				<div className='w-full'>
 					<label htmlFor='name' className='mb-3 font-[500]'>
@@ -177,7 +169,7 @@ const InquiryForm: React.FC = () => {
 								<input
 									type='radio'
 									value={option.value}
-									className='radio-button w-5 h-5 z-50'
+									className='radio-button w-5 h-5 z-50 bg-transparent'
 									{...register("services", {
 										required: "Please select a service",
 									})}
@@ -264,15 +256,17 @@ const InquiryForm: React.FC = () => {
 
 			{/* Submit Button */}
 			<button
+				disabled={true}
 				className=' bg-primary text-white p-3 mt-4 hover-opacity flex-center max-h-[44px] uppercase'
 				type='submit'
+
 			>
 				{isSubmitting ? (
 					<span className='loader'></span>
 				) : isSuccess ? (
 					message
 				) : (
-					"Submit"
+					"Locked!"
 				)}
 			</button>
 		</form>
