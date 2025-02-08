@@ -4,7 +4,7 @@ import ArrowLink from "../ArrowLink";
 import GlobalContext from "../../context/GlobalContext";
 
 const Services = () => {
-	const textRef = useRef<HTMLElement>(null);
+	const textRef = useRef<HTMLDivElement>(null);
 	const imgRef = useRef<HTMLImageElement>(null);
 	const context = useContext(GlobalContext);
 	const container2 = useRef<HTMLDivElement | null>(null);

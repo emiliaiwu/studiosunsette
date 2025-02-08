@@ -14,11 +14,9 @@ type ServiceProp = {
 const Service = ({
 	image,
 	service,
-	index,
 }: {
 	image: string;
 	service: ServiceProp;
-	index: number;
 }) => {
 	const [activeList, setActiveList] = useState<string>("deliverables");
 	const [list, setList] = useState<string[]>(service.deliverables);

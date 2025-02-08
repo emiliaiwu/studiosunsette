@@ -55,7 +55,7 @@ const AllServices = () => {
 								zIndex: services.length - index,
 							}}
 						>
-							<Service image={mada} service={service} index={index} />
+							<Service image={mada} service={service} />
 						</li>
 					))}
 				</ul>

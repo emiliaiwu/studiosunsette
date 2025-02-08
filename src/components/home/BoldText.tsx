@@ -1,7 +1,7 @@
 import img1 from "../../assets/desklaamp.webp";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
-import { useContext, useEffect, useLayoutEffect, useRef } from "react";
+import { useContext, useEffect, useRef } from "react";
 import GlobalContext from "../../context/GlobalContext";
 gsap.registerPlugin(ScrollTrigger);
 
@@ -65,7 +65,7 @@ const BoldText = () => {
 	// 	}
 	// }, []);
 
-	const textRef = useRef<HTMLElement>(null);
+	const textRef = useRef<HTMLDivElement>(null);
 	const textRef2 = useRef<HTMLDivElement>(null);
 	const textRef3 = useRef<HTMLHeadingElement>(null);
 	const textRef4 = useRef<HTMLParagraphElement>(null);
