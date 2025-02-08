@@ -3,7 +3,7 @@ import { useContext, useEffect, useRef } from "react";
 import GlobalContext from "../../context/GlobalContext";
 
 const Philosophy = () => {
-	const textRef = useRef<HTMLElement>(null);
+	const textRef = useRef<HTMLDivElement>(null);
 	const container = useRef<HTMLDivElement | null>(null);
 	const imageRef = useRef<HTMLImageElement | null>(null);
 	const context = useContext(GlobalContext);
