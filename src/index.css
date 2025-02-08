@@ -2,22 +2,39 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+	overflow-x: hidden;
+}
+
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 	text-decoration: none;
-	list-style: none;
+	-webkit-font-smoothing: antialiased;
+	font-kerning: none;
 }
 
 body {
 	background-color: #f0f0f0;
 	color: #333;
 	line-height: 1.5;
-	overflow-x: hidden;
+	overflow-x: clip;
 	max-width: 100vw;
 	width: 100vw;
 	min-height: 100vh;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+}
+
+.kerning {
+	font-kerning: none;
+	vertical-align: top
+}
+
+ul {
+	list-style: none;
 }
 
 a {
@@ -26,10 +43,19 @@ a {
 }
 
 img {
-	max-width: 100%;
-	height: auto;
-	display: block;
+	vertical-align: middle;
+	translate: none;
+	rotate: none;
+	scale: none;
+	will-change: transform;
+	overflow-clip-margin: content-box;
+    overflow: clip;
 }
+
+image {
+  will-change: transform;
+}
+
 
 :root {
 	font-family: "Suisse Regular", sans-serif;
@@ -40,23 +66,153 @@ img {
 }
 
 @font-face {
-	font-family: "Suisse Regular";
-	src: url("/assets/fonts/SuisseRegular.woff2") format("woff2");
+	font-family: "Suisse";
+	src: url("./assets/fonts/SuisseRegular.woff2") format("woff2");
 	font-weight: 400;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: "Suisse";
-	src: url("/assets/fonts/Suisse Bold.woff") format("woff");
+	font-family: "Suisse Bold";
+	src: url("./assets/fonts/SuisseBold.woff2") format("woff2");
 	font-weight: 600;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: "Suisse";
-	src: url("/assets/fonts/Suisse Medium.woff") format("woff");
+	font-family: "Suisse Medium";
+	src: url("./assets/fonts/SuisseMedium.woff2") format("woff2");
 	font-weight: 500;
 	font-style: normal;
 }
 
+@font-face {
+	font-family: "Karlotte";
+	src: url("./assets/fonts/Karlotte.woff2") format("woff2");
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Brighta";
+	src: url("./assets/fonts/BrightaNorwich.woff2") format("woff2");
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Karlotte";
+	src: url("./assets/fonts/KarlotteItalic.woff2") format("woff2");
+	font-weight: 300;
+	font-style: Italic;
+}
+
+@font-face {
+	font-family: "Meditate";
+	src: url("./assets/fonts/EditorsNote-Hairline.woff") format("woff");
+	font-weight: 100;
+	font-style: normal;
+}
+
+.serviceImage {
+	clippath: "polygon(0 0, 100% 0, 100% 0, 0 0)";
+}
+
+.service-item {
+	/* overflow-y: auto; */
+	width: 100%;
+}
+
+/* .container {
+  @apply px-4
+} */
+
+/* FORM */
+input {
+	@apply border border-primary p-3 w-full rounded-none text-sm bg-transparent;
+}
+
+input:focus {
+	@apply outline-none border-black bg-white;
+}
+
+textarea {
+	@apply bg-transparent;
+}
+
+/* input:not(:placeholder-shown) {
+	background-color: #f0f0f0;
+} */
+
+label {
+	@apply text-sm font-suisseMedium;
+}
+
+.radio-button {
+	position: absolute;
+	visibility: hidden;
+}
+
+/* Style the label to look like a checkbox */
+.radio-label {
+	position: relative;
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	border: 1px solid black;
+	margin-right: 7px;
+	vertical-align: middle;
+	cursor: pointer;
+	background-color: white;
+}
+
+/* Add checkmark when selected */
+.radio-button:checked + .radio-label::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: black;
+	border-color: transparent;
+	clip-path: polygon(52% 80%, 91% 6%, 49% 71%, 10% 57%);
+}
+
+.loader {
+	display: block;
+	border: 3px solid #4f525a;
+	border-radius: 50%;
+	border-top: 3px solid #ffffff;
+	width: 28px;
+	height: 28px;
+	-webkit-animation: spin 2s linear infinite; /* Safari */
+	animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+	0% {
+		-webkit-transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+	}
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.menu {
+	@apply w-[50px] h-[30px] flex justify-center items-center gap-[8px] flex-col cursor-pointer;
+}
+
+.menu-span {
+	@apply h-[1px] w-full transition-transform duration-300 ease-in-out;
+}

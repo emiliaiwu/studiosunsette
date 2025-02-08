@@ -1,18 +1,32 @@
-
-import { Helmet } from 'react-helmet-async';
+import img from "../assets/mila.png";
+import { Helmet } from "react-helmet-async";
+import MainHero from "../components/MainHero";
+import Header from "../components/header/Header";
+import Intro from "../components/inquire/Intro";
+import Footer from "../components/Footer";
+import InquireForm from "../components/inquire/InquireForm";
+import Announcement from "../components/Announcement";
 
 const Inquire = () => {
-  return (
-		<div>
+	return (
+		<>
 			<Helmet>
-				<title>Inquire - Studio Basique</title>
+				<title>Inquire - Studio Amaka</title>
 				<meta
 					name='description'
-					content='Welcome to the home page of My Website!'
+					content='Studio Amaka Service Inquiry Page'
 				/>
 			</Helmet>
-		</div>
+			<Announcement />
+			<Header />
+			<main>
+				<MainHero bgImage={img} text=' Your Dream HOME IS ONE EMAIL AWAY' />
+				<Intro />
+				<InquireForm />
+			</main>
+			<Footer />
+		</>
 	);
-}
+};
 
-export default Inquire
+export default Inquire;

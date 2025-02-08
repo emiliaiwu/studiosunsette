@@ -1,18 +1,41 @@
-
-import { Helmet } from 'react-helmet-async';
+import { Helmet } from "react-helmet-async";
+import Header from "../components/header/Header";
+import MainHero from "../components/MainHero";
+import about from "../assets/aboutimage.webp";
+import AboutText from "../components/about/About";
+import BoldText from "../components/about/BoldText";
+import Philosophy from "../components/about/Philosophy";
+import AboutMe from "../components/AboutMe";
+import Process from "../components/Process";
+import Cta from "../components/Cta";
+import Footer from "../components/Footer";
+import Announcement from "../components/Announcement";
 
 const About = () => {
-  return (
-		<div className='bg-gray-900'>
+	return (
+		<>
 			<Helmet>
-				<title>About - Studio Basique</title>
+				<title>About — Studio Amaka</title>
 				<meta
 					name='description'
-					content='Welcome to the home page of My Website!'
+					content='Studio Amaka is a full-service studio specializing in web design & development'
 				/>
 			</Helmet>
-		</div>
-	);
-}
+			<Announcement />
+			<Header />
+			<main>
+				<MainHero bgImage={about} text='FROM The Heart Behind the studio' />
+				<AboutText />
+				<BoldText />
+				<Philosophy />
 
-export default About
+				<AboutMe />
+				<Process />
+				<Cta />
+			</main>
+			<Footer />
+		</>
+	);
+};
+
+export default About;
