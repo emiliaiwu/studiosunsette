@@ -1,4 +1,4 @@
-import bgImage from "../assets/desssk.png";
+import bgImage from "../assets/desssk.webp";
 import GlobalContext from "../context/GlobalContext";
 import ArrowLink from "./ArrowLink";
 import { useContext, useEffect, useRef } from "react";
@@ -7,7 +7,7 @@ import { useContext, useEffect, useRef } from "react";
 const Cta = () => {
 	const backgroundStyle = {
 		backgroundImage: `url(${bgImage})`,
-		backgroundAttachment: "fixed",
+		backgroundAttachment: window.innerWidth > 768 ? "fixed" : "scroll",
 		backgroundPosition: "center center",
 		backgroundRepeat: "no-repeat",
 		backgroundSize: "cover",

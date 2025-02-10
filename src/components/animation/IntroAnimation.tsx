@@ -53,7 +53,7 @@ const IntroAnimation = () => {
 					// 		ease: "power3.in",
 					// 	}
 					// )
-					.to({}, { duration: 1.2})
+					.to({}, { duration: 1.5})
 					// .to(".logo", {
 					// 	opacity: 0,
 					// 	duration: 1,

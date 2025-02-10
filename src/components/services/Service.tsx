@@ -36,14 +36,14 @@ const Service = ({
 
 	return (
 		<div className='bg-primary-light flex lg:flex-row flex-col w-full justify-center items-start min-h-screen max-h-[1100px]'>
-			<div className='min-h-screen max-h-[1100px] h-[400px] lg:w-1/2 w-full lg:sticky top-0 self-stretch'>
+			<div className='min-h-screen max-h-[1100px] h-[400px] lg:w-1/2 w-full lg:sticky top-0 self-stretch hidden lg:flex'>
 				<img
 					src={image}
 					alt='service image'
 					className='h-full w-full object-cover serviceImage'
 				/>
 			</div>
-			<div className='lg:w-1/2 w-full px-8 flex items-start justify-center h-full pt-20 self-center bg-primary-light'>
+			<div className='lg:w-1/2 w-full px-8 flex items-start justify-center h-full pt-20 pb-10 self-center bg-primary-light'>
 				<div className='max-w-[800px] h-full flex flex-col justify-between'>
 					<div className='flex flex-row justify-between items-center w-full'>
 						{/* <p className='font-suisseBold text-xs uppercase'>
@@ -101,7 +101,7 @@ const Service = ({
 									Investment
 								</button>
 							</div>
-							<ul className=' font-suisse flex flex-col gap-[6px] text-sm h-[300px]'>
+							<ul className=' font-suisse flex flex-col gap-[6px] text-sm h-[260px]'>
 								{list.map((item, index) => (
 									<li key={index} className='flex flex-row items-center gap-2'>
 										<span className='block w-[4px] h-[4px] bg-black rounded-full'></span>

@@ -6,7 +6,7 @@ import GlobalContext from "../../context/GlobalContext";
 const About = () => {
 	const backgroundStyle = {
 		backgroundImage: `url(${bgImage})`,
-		backgroundAttachment: "fixed",
+		backgroundAttachment: window.innerWidth > 768 ? "fixed" : "scroll",
 		backgroundPosition: "center center",
 		backgroundRepeat: "no-repeat",
 		backgroundSize: "cover",
@@ -42,6 +42,8 @@ const About = () => {
 				>
 					{" "}
 				</div>
+
+
 				<div className='h-full flex justify-center items-center w-full gap-16 flex-col absolute inset-0 z-30 '>
 					<p ref={textRef2} className='font-suisse text-center mb-4 leading-[100%] uppercase text-xs text-primary-light tracking-[10px]'>
 						welcome to

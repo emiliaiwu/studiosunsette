@@ -40,16 +40,16 @@ const Hero = () => {
 		if (imageRef.current && overlayRef.current) {
 			// Set initial state
 			gsap.set(imageRef.current, { scale: 1, opacity: 0 });
-			// gsap.set(overlayRef.current, { scale: 1, opacity: 0 });
+			gsap.set(overlayRef.current, { scale: 1, opacity: 1 });
 
 			// Animate elements
-			// gsap.to(overlayRef.current, {
-			// 	scale: 1.1,
-			// 	opacity: 0.5,
-			// 	duration: 3,
-			// 	delay: 0.5,
-			// 	ease: "power2.out",
-			// });
+			gsap.to(overlayRef.current, {
+				scale: 1.1,
+				opacity: 0.5,
+				duration: 3,
+				delay: 0.5,
+				ease: "power2.out",
+			});
 			gsap.to(imageRef.current, {
 				scale: 1.1,
 				opacity: 1,
@@ -64,11 +64,11 @@ const Hero = () => {
 		<section className='w-full h-[120vh] relative overflow-hidden'>
 			<div
 				ref={textRef}
-				className='absolute z-30 lg:top-[70%] top-[60%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full flex flex-col-reverse sm:px-8 gap-6 '
+				className='absolute z-30 lg:top-[70%] top-[56%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full flex flex-col-reverse sm:px-8 gap-6 '
 			>
 				<h1
 					// style={textStyle}
-					className=' font-karlotte text-[80px] sm:text-[160px] lg:text-[200px] xl:text-[136px] xxl:text-[160px] xxxl:text-[200px] text-white leading-[110%] text-center sm:text-left uppercase xl:text-center relative flex xl:flex-row flex-col gap-6 w-full justify-between items-center'
+					className=' font-karlotte text-[80px] sm:text-[160px] lg:text-[200px] xl:text-[136px] xxl:text-[160px] xxxl:text-[200px] text-white leading-[110%] text-center sm:text-left uppercase xl:text-center relative flex xl:flex-row flex-col gap-4 w-full justify-between items-center'
 				>
 					{" "}
 					STUDIO

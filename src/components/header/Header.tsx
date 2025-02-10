@@ -31,6 +31,18 @@ const Header: React.FC<TextProp> = ({
 
 	const { isMenuOpen, toggleMenu } = useGlobalContext();
 
+	useEffect(() => {
+		if (isMenuOpen) {
+			document.body.style.overflow = "hidden";
+		} else {
+			document.body.style.overflow = ""; 
+		}
+
+		return () => {
+			document.body.style.overflow = ""; 
+		};
+	}, [isMenuOpen]);
+
 	const menuRef = useRef<HTMLDivElement | null>(null);
 	const tl = useRef<gsap.core.Timeline | null>(null);
 
@@ -86,10 +98,7 @@ const Header: React.FC<TextProp> = ({
 		>
 			<nav className='w-full md:px-12 px-4 flex justify-between items-center h-full relative'>
 				<div className='w-full flex flex-row justify-between items-center lg:hidden'>
-					<Link
-						to={"/"}
-						className='text-2xl font-karlotte uppercase z-50 block'
-					>
+					<Link to={"/"} className='text-2xl font-karlotte uppercase block'>
 						STUDIO AMAKA
 					</Link>
 					<MenuButton isScrolled={isScrolled} btnColor={btnColor} />
@@ -100,19 +109,28 @@ const Header: React.FC<TextProp> = ({
 					ref={menuRef}
 					className={` 
 						
-					 h-screen bg-primary-light w-screen absolute top-0 left-0 flex flex-col justify-center items-center gap-10 lg:hidden`}
+					 h-screen bg-primary-light w-screen absolute top-1 left-0 flex flex-col gap-40 lg:hidden `}
 				>
+					<div className='w-full flex flex-row justify-between items-center lg:hidden h-16 md:px-12 px-4 pr-10'>
+						<Link
+							to={"/"}
+							className='text-2xl font-karlotte uppercase z-50 block text-primary'
+						>
+							STUDIO AMAKA
+						</Link>
+						<MenuButton isScrolled={isScrolled} btnColor={"bg-primary"} />
+					</div>
 					<ul
 						className={` 
 						
-					 flex flex-col justify-center items-center gap-10`}
+					 flex flex-col justify-center items-center gap-8 justify-self-center`}
 					>
 						{navLink.map((link, index) => (
 							<li
 								onClick={toggleMenu}
 								key={index}
 								className={
-									"text-lg uppercase font-suisse text-primary text-center"
+									"text-sm uppercase font-suisseMedium text-primary text-center"
 								}
 							>
 								<NavLink

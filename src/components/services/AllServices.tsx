@@ -1,5 +1,5 @@
 import { useLayoutEffect, useRef } from "react";
-import mada from "../../assets/desssk.png";
+import mada from "../../assets/desssk.webp";
 import { services } from "../../db/db";
 import Service from "./Service";
 import gsap from "gsap";

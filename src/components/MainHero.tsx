@@ -31,7 +31,7 @@ const MainHero: React.FC<MainHeroProps> = ({ bgImage, text }) => {
 		if (imageRef.current && overlayRef.current) {
 			// Set initial state
 			gsap.set(imageRef.current, { scale: 1}); 
-			gsap.set(overlayRef.current, { scale: 1, opacity: 0.5});
+			gsap.set(overlayRef.current, { scale: 1, opacity: 1});
 
 			// Animate elements
 			gsap.to(imageRef.current, {
@@ -63,7 +63,7 @@ const MainHero: React.FC<MainHeroProps> = ({ bgImage, text }) => {
 
 	return (
 		<div className='w-full h-full relative'>
-			<div className='w-full left-0 flex flex-col justify-center items-center gap-8 absolute z-40 bottom-20 px-4'>
+			<div className='w-full left-0 flex flex-col justify-center items-center gap-8 absolute z-40 bottom-32 px-4'>
 				<div className='w-full flex justify-center items-center z-50'>
 					<h1
 						ref={textRef2}

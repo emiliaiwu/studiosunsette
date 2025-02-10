@@ -39,7 +39,7 @@ const Services = () => {
 	// };
 
 	return (
-		<section className=' bg-primary-light w-full h-full relative overflow-x-hidden pb-20'>
+		<section className=' bg-primary-light w-full h-full relative overflow-x-hidden pb-20 lg:pt-0 pt-20 '>
 			<div
 				ref={container}
 				className='flex w-full h-full justify-between flex-col-reverse lg:flex-row gap-20 lg:gap-10'
