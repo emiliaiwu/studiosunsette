@@ -45,7 +45,7 @@ const Cta = () => {
 						</h2>
 
 						<div className='text-white'>
-							<ArrowLink link='/about' label='Become a client here' />
+							<ArrowLink link='/inquire' label='Become a client here' />
 						</div>
 					</div>
 				</div>

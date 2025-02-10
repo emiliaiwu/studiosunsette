@@ -13,6 +13,7 @@ import About from "../components/home/About";
 import IntroAnimation from "../components/animation/IntroAnimation";
 // import Marquee from "../components/Marquee";
 import Announcement from "../components/Announcement";
+import Marquee from "../components/Marquee";
 
 const Home = () => {
 	// const [showIntro, setShowIntro] = useState<boolean>(true);
@@ -49,6 +50,7 @@ const Home = () => {
 				<Services />
 				{/* <Works /> */}
 				{/* <Process /> */}
+				<div className="w-full py-20 bg-primary-light"><Marquee/></div>
 				<AboutMe />
 				<Cta />
 			</main>

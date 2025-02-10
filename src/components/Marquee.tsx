@@ -38,7 +38,7 @@ const Marquee = () => {
 				<div
 					ref={firstText}
 					style={textStyle}
-					className=' font-karlotte text-primary-light uppercase leading-[100%] borde-b border-white border-opacity-50 whitespace-nowrap'
+					className=' font-karlotte text-primary uppercase leading-[100%] borde-b border-white border-opacity-50 whitespace-nowrap'
 				>
 					sQUARESPACE • SHOPIFY • WEBFLOW • SHOWIT • WIX •&nbsp;
 				</div>
@@ -46,7 +46,7 @@ const Marquee = () => {
 				<div
 					ref={secondText}
 					style={textStyle}
-					className='font-karlotte text-primary-light uppercase leading-[100%] borde-b border-white border-opacity-50 '
+					className='font-karlotte text-primary uppercase leading-[100%] borde-b border-white border-opacity-50 '
 				>
 					{" "}
 					SQUARESPACE • SHOPIFY • WEBFLOW • SHOWIT • WIX •

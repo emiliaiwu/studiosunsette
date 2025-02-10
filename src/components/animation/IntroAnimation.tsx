@@ -89,7 +89,7 @@ const IntroAnimation = () => {
 				!showIntro ? "flex" : "hidden"
 			}`}
 		>
-			<h1 className='logo font-karlotte uppercase  text-primary'>
+			<h1 className='logo font-bright uppercase  text-primary'>
 				Studio ÁmÁkÁ
 			</h1>
 			{/* <div className='left w-1/2 h-full flex justify-end items-center b-[#FBF0DA]'>

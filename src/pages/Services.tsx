@@ -23,7 +23,7 @@ const Services = () => {
 			</Helmet>
 			<Announcement />
 			<Header />
-			<main>
+			<main className="w-full h-full">
 				<MainHero bgImage={img} text='Creating Digital Homes for Brands' />
 				<Incoming />
 

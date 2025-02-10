@@ -19,7 +19,7 @@ useEffect(() => {
 }, [context]);
 
 	return (
-		<section className='w-full h-full py-20 md:px-16 px-8 bg-primary-light flex justify-center items-center z-[60]'>
+		<section className='w-full h-full xxxl:pt-60 py-20 md:px-16 px-8 bg-primary-light flex justify-center items-center z-10'>
 			<div className='text-primary flex flex-col items-center gap-12 bg-primary-light'>
 				<h2 ref={textRef}
 					style={textStyle}

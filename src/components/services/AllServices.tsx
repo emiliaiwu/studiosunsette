@@ -26,7 +26,7 @@ const AllServices = () => {
 
 		imageStackRefs.current.forEach((image, index) => {
 			if (index === 0) {
-				tl.to(image, { yPercent: -160, duration: 1 }, "step" + index);
+				tl.to(image, { yPercent: -100, duration: 1 }, "step" + index);
 			} else {
 				tl.to(
 					image,
@@ -36,6 +36,8 @@ const AllServices = () => {
 			}
 		});
 
+		ScrollTrigger.refresh();
+
 		return () => {
 			ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
 		};
@@ -43,21 +45,23 @@ const AllServices = () => {
 
 	return (
 		<section className='bg-primary-light w-full h-full'>
-			<div ref={sectionRef} className='hidden lg:flex'>
-				<ul className='flex flex-col relative'>
-					{services.map((service, index) => (
-						<li
-							ref={(el) => (imageStackRefs.current[index] = el)}
-							key={index}
-							className='service-item absolute inset-0 h-screen'
-							style={{
-								zIndex: services.length - index,
-							}}
-						>
-							<Service image={mada} service={service} />
-						</li>
-					))}
-				</ul>
+			<div className="hidden lg:block">
+				<div ref={sectionRef} className=''>
+					<ul className='flex flex-col relative'>
+						{services.map((service, index) => (
+							<li
+								ref={(el) => (imageStackRefs.current[index] = el)}
+								key={index}
+								className='service-item absolute inset-0 h-screen w-screen'
+								style={{
+									zIndex: services.length - index,
+								}}
+							>
+								<Service image={mada} service={service} />
+							</li>
+						))}
+					</ul>
+				</div>
 			</div>
 			<div className='lg:hidden'>
 				<ul className='flex flex-col relative'>
