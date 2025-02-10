@@ -21,7 +21,6 @@ const AllServices = () => {
 				start: "top top",
 				end: "+=" + window.innerHeight * imageStackRefs.current.length,
 				scrub: true,
-				
 			},
 		});
 
@@ -44,11 +43,26 @@ const AllServices = () => {
 
 	return (
 		<section className='bg-primary-light w-full h-full'>
-			<div ref={sectionRef} className=''>
+			<div ref={sectionRef} className='hidden lg:flex'>
 				<ul className='flex flex-col relative'>
 					{services.map((service, index) => (
 						<li
 							ref={(el) => (imageStackRefs.current[index] = el)}
+							key={index}
+							className='service-item absolute inset-0 h-screen'
+							style={{
+								zIndex: services.length - index,
+							}}
+						>
+							<Service image={mada} service={service} />
+						</li>
+					))}
+				</ul>
+			</div>
+			<div className='lg:hidden'>
+				<ul className='flex flex-col relative'>
+					{services.map((service, index) => (
+						<li
 							key={index}
 							className='service-item absolute inset-0 h-screen'
 							style={{
