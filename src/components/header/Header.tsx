@@ -130,7 +130,7 @@ const Header: React.FC<TextProp> = ({
 								onClick={toggleMenu}
 								key={index}
 								className={
-									"text-sm uppercase font-suisseMedium text-primary text-center"
+									"text-sm uppercase font-suisseMedium text-primary text-center hover:opacity-50 duration-200 ease-in transition-opacity"
 								}
 							>
 								<NavLink
@@ -163,8 +163,8 @@ const Header: React.FC<TextProp> = ({
 							key={index}
 							className={
 								index !== 2
-									? "text-xs uppercase "
-									: "text-2xl font-karlotte uppercase  text-center"
+									? "text-xs uppercase hover:opacity-50 duration-200 ease-in transition-opacity "
+									: "text-2xl font-karlotte uppercase text-center hover:opacity-50 duration-200 ease-in transition-opacity"
 							}
 						>
 							<NavLink
