@@ -52,6 +52,7 @@ const Services = () => {
 						ref={imageRef}
 						src={img1}
 						alt='Emilia Iwu'
+						loading="lazy"
 						className='h-[160%] w-full object-cover'
 					/>
 					{/* <img

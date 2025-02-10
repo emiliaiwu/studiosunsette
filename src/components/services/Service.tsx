@@ -40,6 +40,7 @@ const Service = ({
 				<img
 					src={image}
 					alt='service image'
+					loading="lazy"
 					className='h-full w-full object-cover serviceImage'
 				/>
 			</div>

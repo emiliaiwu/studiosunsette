@@ -48,7 +48,7 @@ const Process = () => {
 	];
 
 	return (
-		<section className='bg-primary py-40 w-full flex justify-center items-center mb-20'>
+		<section className='bg-primary py-40 w-full flex justify-center items-center'>
 			<div className='text-primary-light font-suisse max-w-[1280px] w-full'>
 				<h2 ref={headRef} className='text-sm uppercase mb-20 text-center'>
 					The Process

@@ -43,28 +43,28 @@ const IntroAnimation = () => {
 					},
 				});
 				timeline
-					// .fromTo(
-					// 	".logo",
-					// 	{ opacity: 0, clipPath: "inset(100% 0% 0% 0%)" },
-					// 	{
-					// 		opacity: 1,
-					// 		clipPath: "inset(0% 0% 0% 0%)",
-					// 		duration: 1,
-					// 		ease: "power3.in",
-					// 	}
-					// )
-					.to({}, { duration: 1.5})
-					// .to(".logo", {
-					// 	opacity: 0,
-					// 	duration: 1,
-					// 	ease: "power3.in",
-					// 	clipPath: "inset(100% 0% 0% 0%)",
-					// })
-					// .to(".logo", { opacity: 0, duration: 1, ease: "power3.in" })
+					.fromTo(
+						".logo",
+						{ opacity: 0, clipPath: "inset(100% 0% 0% 0%)" },
+						{
+							opacity: 1,
+							clipPath: "inset(0% 0% 0% 0%)",
+							duration: 1,
+							ease: "power3.in",
+						}
+					)
+					.to({}, { duration: 1.5 })
+					.to(".logo", {
+						opacity: 0,
+						duration: 1,
+						ease: "power3.in",
+						clipPath: "inset(100% 0% 0% 0%)",
+					})
+					.to(".logo", { opacity: 0, duration: 1, ease: "power3.in" })
 					// .to(
 					// 	container.current.querySelector(".left"),
 
-					// 	{ xPercent: -100, duration: 1.5 }
+					// 	{ xPercent: -100, duration: 1 }
 					// )
 
 					// .to(
@@ -75,7 +75,7 @@ const IntroAnimation = () => {
 					// 	},
 					// 	"<"
 					// )
-					.to(container.current, { opacity: 0, duration: 1})
+					.to(container.current, { opacity: 0, duration: 1 }, "<")
 					.to(container.current, { display: "none", duration: 0 });
 			}
 		},

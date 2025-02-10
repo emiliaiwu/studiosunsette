@@ -131,6 +131,7 @@ const AboutMe = () => {
 						ref={imageRef}
 						src={mypics}
 						alt='Emilia Iwu'
+						loading="lazy"
 						className='lg:h-[1000px] h-[120vh] w-full object-cover'
 					/>
 					{/* <img

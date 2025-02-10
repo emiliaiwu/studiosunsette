@@ -63,6 +63,7 @@ const Hero = () => {
 	return (
 		<section className='w-full h-[120vh] relative overflow-hidden'>
 			<div
+				rel="preload"
 				ref={textRef}
 				className='absolute z-30 lg:top-[70%] top-[56%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full flex flex-col-reverse sm:px-8 gap-6 '
 			>

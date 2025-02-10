@@ -22,6 +22,7 @@ const InquireForm = () => {
 						<img
 							src={img1}
 							alt='Emilia Iwu'
+							loading="lazy"
 							className='h-full w-full object-cover'
 						/>
 					</div>

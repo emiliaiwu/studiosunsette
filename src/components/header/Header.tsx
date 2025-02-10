@@ -111,7 +111,7 @@ const Header: React.FC<TextProp> = ({
 						
 					 h-screen bg-primary-light w-screen absolute top-1 left-0 flex flex-col gap-40 lg:hidden `}
 				>
-					<div className='w-full flex flex-row justify-between items-center lg:hidden h-16 md:px-12 px-4 pr-10'>
+					<div className='w-full flex flex-row justify-between items-center lg:hidden h-16 md:px-12 px-4 pr-8'>
 						<Link
 							to={"/"}
 							className='text-2xl font-karlotte uppercase z-50 block text-primary'

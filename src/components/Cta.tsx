@@ -30,7 +30,7 @@ const Cta = () => {
 	}, [context]);
 
 	return (
-		<section className='bg-primary-light w-full xl:px-32 sm:px-16 px-8 flex justify-center items-center min-h-[100vh] pb-40 pt-20'>
+		<section className='bg-primary-light w-full xl:px-32 sm:px-16 px-8 flex justify-center items-center min-h-[100vh] py-40'>
 			<div className='h-[500px] w-full relative flex justify-center items-center'>
 				<div style={backgroundStyle} className=' w-full h-full absolute'>
 					<div className='bg-primary w-full h-full absolute opacity-50 inset-0'></div>
