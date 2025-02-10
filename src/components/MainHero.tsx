@@ -63,7 +63,7 @@ const MainHero: React.FC<MainHeroProps> = ({ bgImage, text }) => {
 
 	return (
 		<div className='w-full h-full relative'>
-			<div className='w-full left-0 flex flex-col justify-center items-center gap-8 absolute z-40 bottom-20git px-4'>
+			<div className='w-full left-0 flex flex-col justify-center items-center gap-8 absolute z-40 bottom-28 px-4'>
 				<div className='w-full flex justify-center items-center z-50'>
 					<h1
 						ref={textRef2}
