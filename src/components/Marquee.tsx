@@ -30,7 +30,7 @@ const Marquee = () => {
 		};
 
   return (
-		<div className='w-full flex flex-col justify-center items-center z-40 px-4 gap-1 '>
+		<section className='w-full flex flex-col justify-center items-center z-40 px-4 gap-1 overflow-hidden'>
 			<div
 				ref={slider}
 				className='slider h-full w-full flex flex-row relative whitespace-nowrap'
@@ -52,7 +52,7 @@ const Marquee = () => {
 					SQUARESPACE • SHOPIFY • WEBFLOW • SHOWIT • WIX •
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 }
 

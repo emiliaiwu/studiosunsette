@@ -34,11 +34,11 @@ const About = () => {
 
 	return (
 		<section className='md:py-20 pb-20 bg-primay w-full h-[100vh] flex justify-center items-center relative '>
-			<div className='w-full h-full'>
+			<div className='w-full h-full flex justify-center items-center'>
 				<div className='bg-primary w-full h-full absolute opacity-60 inset-0 z-20'></div>
 				<div
 					style={backgroundStyle}
-					className='w-screen h-full absolute inset-0'
+					className='w-full h-full absolute inset-0 max-w-[1920px]'
 				>
 					{" "}
 				</div>

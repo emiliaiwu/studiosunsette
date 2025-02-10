@@ -53,7 +53,7 @@ const Services = () => {
 						src={img1}
 						alt='Emilia Iwu'
 						loading="lazy"
-						className='h-[160%] w-full object-cover'
+						className='h-[140%] w-full object-cover'
 					/>
 					{/* <img
 						src={mypics}

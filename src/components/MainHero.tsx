@@ -62,7 +62,7 @@ const MainHero: React.FC<MainHeroProps> = ({ bgImage, text }) => {
 	}, [context]);
 
 	return (
-		<div className=' w-full h-full relative'>
+		<section className=' w-full h-full relative'>
 			<div className='w-full left-0 flex flex-col justify-center items-center gap-8 absolute z-40 bottom-28 px-4'>
 				<div className='w-full flex justify-center items-center z-50'>
 					<h1
@@ -82,8 +82,8 @@ const MainHero: React.FC<MainHeroProps> = ({ bgImage, text }) => {
 			</div>
 
 			<div className='bg-primary w-full h-[100vh] absolute inset-0 z-20 opacity-50'></div>
-			<div rel='preload' style={backgroundStyle} className='image'></div>
-		</div>
+			<div rel='preload' style={backgroundStyle} className='image max-w-[1920px]'></div>
+		</section>
 	);
 };
 

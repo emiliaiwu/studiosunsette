@@ -5,7 +5,7 @@ type PlaceHolderProp = {
 
 const PlaceHolderPage: React.FC<PlaceHolderProp> = ({ heading, text }) => {
 	return (
-		<div className='h-screen w-full overflow-hidden relative bg-primary-light'>
+		<section className='h-screen w-full overflow-hidden relative bg-primary-light'>
 			<div className='w-full h-full flex justify-center items-center inset-0 absolute'>
 				<div className='flex flex-col gap-4 text-primary items-center md:pt-16 pt-8'>
 					<h1
@@ -19,7 +19,7 @@ const PlaceHolderPage: React.FC<PlaceHolderProp> = ({ heading, text }) => {
 					</p>
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 };
 

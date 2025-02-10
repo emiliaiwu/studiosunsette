@@ -24,7 +24,7 @@ const Footer = () => {
 		},
 	];
 	return (
-		<footer className='bg-primary pt-28 pb-16 w-full flex justify-center items-end lg:px-16 px-8 relative'>
+		<footer className='bg-primary pt-28 pb-16 w-full flex justify-center items-end lg:px-16 px-8 relative max-w-[1920px]'>
 			<div className='text-white w-full flex flex-col justify-center items-start gap-12 '>
 				<div className='w-full flex lg:flex-row flex-col gap-16 justify-between items-start'>
 					<div>

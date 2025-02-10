@@ -23,7 +23,7 @@ const About = () => {
 			</Helmet>
 			<Announcement />
 			<Header />
-			<main>
+			<main className='w-full flex justify-center items-center flex-col'>
 				<MainHero bgImage={about} text='FROM The Heart Behind the studio' />
 				<AboutText />
 				<BoldText />

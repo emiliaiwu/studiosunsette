@@ -41,7 +41,7 @@ const Home = () => {
 			</Helmet>
 			<Announcement />
 			<Header />
-			<main>
+			<main className='w-full flex justify-center items-center flex-col'>
 				<IntroAnimation />
 				<Hero />
 				<Intro />
@@ -50,7 +50,9 @@ const Home = () => {
 				<Services />
 				{/* <Works /> */}
 				{/* <Process /> */}
-				<div className="w-full py-20 bg-primary-light"><Marquee/></div>
+				<div className='w-full py-10 bg-primary-light'>
+					<Marquee />
+				</div>
 				<AboutMe />
 				<Cta />
 			</main>

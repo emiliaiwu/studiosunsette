@@ -1,4 +1,5 @@
-import img1 from "../../assets/desklaamp.webp";
+import img1 from "../../assets/tik.webp";
+import img3 from "../../assets/tyu.webp"
 import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import { useContext, useEffect, useRef } from "react";
@@ -123,7 +124,7 @@ const BoldText = () => {
 					>
 						<img
 							ref={imageRef}
-							src={img1}
+							src={img3}
 							className='w-full h-[700px] object-cover'
 							alt='image'
 						/>

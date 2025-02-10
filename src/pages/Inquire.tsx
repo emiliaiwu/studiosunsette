@@ -12,14 +12,11 @@ const Inquire = () => {
 		<>
 			<Helmet>
 				<title>Inquire - Studio Amaka</title>
-				<meta
-					name='description'
-					content='Studio Amaka Service Inquiry Page'
-				/>
+				<meta name='description' content='Studio Amaka Service Inquiry Page' />
 			</Helmet>
 			<Announcement />
 			<Header />
-			<main>
+			<main className='w-full flex justify-center items-center flex-col'>
 				<MainHero bgImage={img} text=' Your Dream site IS ONE EMAIL AWAY' />
 				<Intro />
 				<InquireForm />
