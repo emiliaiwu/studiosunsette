@@ -64,7 +64,7 @@ const AllServices = () => {
 					{services.map((service, index) => (
 						<li
 							key={index}
-							className='service-item absolute inset-0 h-screen'
+							className='service-item'
 							style={{
 								zIndex: services.length - index,
 							}}
