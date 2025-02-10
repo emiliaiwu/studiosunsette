@@ -20,7 +20,7 @@ const Inquire = () => {
 			<Announcement />
 			<Header />
 			<main>
-				<MainHero bgImage={img} text=' Your Dream HOME IS ONE EMAIL AWAY' />
+				<MainHero bgImage={img} text=' Your Dream site IS ONE EMAIL AWAY' />
 				<Intro />
 				<InquireForm />
 			</main>

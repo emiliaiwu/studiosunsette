@@ -10,7 +10,7 @@ interface MainHeroProps {
 const MainHero: React.FC<MainHeroProps> = ({ bgImage, text }) => {
 	const backgroundStyle = {
 		backgroundImage: `url(${bgImage})`,
-		backgroundAttachment: "fixed",
+		backgroundAttachment: window.innerWidth > 768 ? "fixed" : "scroll",
 		backgroundPosition: "center center",
 		backgroundRepeat: "no-repeat",
 		backgroundSize: "cover",
