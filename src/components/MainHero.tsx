@@ -81,8 +81,8 @@ const MainHero: React.FC<MainHeroProps> = ({ bgImage, text }) => {
 				</div>
 			</div>
 
-			<div className='bg-primary w-full h-[100vh] absolute inset-0 z-20 opacity-50'></div>
-			<div rel='preload' style={backgroundStyle} className='image max-w-[1920px]'></div>
+			<div ref={overlayRef} className='bg-primary w-full h-[100vh] absolute inset-0 z-20 opacity-50'></div>
+			<div ref={imageRef} style={backgroundStyle} className='image max-w-[1920px] opacity-0'></div>
 		</section>
 	);
 };
