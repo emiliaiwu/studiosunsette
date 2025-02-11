@@ -1,5 +1,5 @@
 import { useContext, useEffect, useLayoutEffect, useRef } from "react";
-import bgImage from "../../assets/homeimage.webp";
+import bgImage from "/assets/homeimage.webp";
 // import Marquee from "../Marquee";
 import GlobalContext from "../../context/GlobalContext";
 import gsap from "gsap";
@@ -56,14 +56,13 @@ const Hero = () => {
 				duration: 2,
 				ease: "power2.out",
 			});
-			
 		}
 	}, []);
 
 	return (
 		<section className='w-full h-[120vh] relative overflow-hidden'>
 			<div
-				rel="preload"
+				rel='preload'
 				ref={textRef}
 				className='absolute z-30 lg:top-[70%] top-[56%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full flex flex-col-reverse sm:px-8 gap-6 '
 			>
@@ -83,7 +82,10 @@ const Hero = () => {
 				<Marquee />
 			</div> */}
 
-			<div ref={overlayRef} className='bg-primary w-full h-[120vh] absolute opacity-50 inset-0 z-20'></div>
+			<div
+				ref={overlayRef}
+				className='bg-primary w-full h-[120vh] absolute opacity-50 inset-0 z-20'
+			></div>
 			<div ref={imageRef} className='h-[120vh]' style={backgroundStyle}></div>
 		</section>
 	);

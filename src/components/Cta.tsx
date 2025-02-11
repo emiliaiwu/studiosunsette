@@ -1,4 +1,4 @@
-import bgImage from "../assets/desssk.webp";
+import bgImage from "/assets/desssk.webp";
 import GlobalContext from "../context/GlobalContext";
 import ArrowLink from "./ArrowLink";
 import { useContext, useEffect, useRef } from "react";

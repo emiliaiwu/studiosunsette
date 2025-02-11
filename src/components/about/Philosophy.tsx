@@ -1,4 +1,4 @@
-import image1 from "../../assets/medas.webp";
+import image1 from "/assets/medas.webp";
 import { useContext, useEffect, useRef } from "react";
 import GlobalContext from "../../context/GlobalContext";
 

@@ -1,7 +1,7 @@
 import { Helmet } from "react-helmet-async";
 import Header from "../components/header/Header";
 import MainHero from "../components/MainHero";
-import img from "../assets/worksimage.webp";
+import img from "/assets/worksimage.webp";
 import { Incoming } from "../components/services/Incoming";
 import AllServices from "../components/services/AllServices";
 import CustomService from "../components/services/CustomService";

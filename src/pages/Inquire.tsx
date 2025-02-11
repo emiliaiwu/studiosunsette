@@ -1,4 +1,4 @@
-import img from "../assets/mila.webp";
+import img from "/assets/mila.webp";
 import { Helmet } from "react-helmet-async";
 import MainHero from "../components/MainHero";
 import Header from "../components/header/Header";

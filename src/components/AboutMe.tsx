@@ -1,5 +1,5 @@
 import { useContext, useEffect, useRef } from "react";
-import mypics from "../assets/emilia iwu.webp";
+import mypics from "/assets/emilia iwu.webp";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import GlobalContext from "../context/GlobalContext";

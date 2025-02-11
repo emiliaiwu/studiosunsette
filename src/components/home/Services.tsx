@@ -1,5 +1,5 @@
 import { useContext, useEffect, useRef } from "react";
-import img1 from "../../assets/desklaamp.webp";
+import img1 from "/assets/desklaamp.webp";
 import ArrowLink from "../ArrowLink";
 import GlobalContext from "../../context/GlobalContext";
 

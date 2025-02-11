@@ -1,5 +1,5 @@
-import img1 from "../../assets/tik.webp";
-import img3 from "../../assets/tyu.webp"
+import img1 from "/assets/tik.webp";
+import img3 from "/assets/tyu.webp"
 import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import { useContext, useEffect, useRef } from "react";
