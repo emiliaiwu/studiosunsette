@@ -85,11 +85,11 @@ const IntroAnimation = () => {
 	return (
 		<div
 			ref={container}
-			className={`bg-primar bg-[#FBF0DA] w-screen h-screen absolute inset-0 z-50 text-2xl sm:text-3xl xxl:text-5xl lg:text-4xl justify-center items-center ${
+			className={`bg-primar bg-[#FBF0DA] w-screen h-screen absolute inset-0 z-50 text-4xl sm:text-5xl xxl:text-7xl lg:text-6xl justify-center items-center ${
 				!showIntro ? "flex" : "hidden"
 			}`}
 		>
-			<h1 className='logo font-bright uppercase  text-primary'>
+			<h1 className='logo font-karlotte uppercase  text-primary'>
 				Studio ÁmÁkÁ
 			</h1>
 			{/* <div className='left w-1/2 h-full flex justify-end items-center b-[#FBF0DA]'>
