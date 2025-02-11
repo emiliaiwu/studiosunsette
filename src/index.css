@@ -81,42 +81,42 @@ image {
 
 @font-face {
 	font-family: "Suisse Bold";
-	src: url("./assets/fonts/SuisseBold.woff2") format("woff2");
+	src: url("/assets/fonts/SuisseBold.woff2") format("woff2");
 	font-weight: 600;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: "Suisse Medium";
-	src: url("./assets/fonts/SuisseMedium.woff2") format("woff2");
+	src: url("/assets/fonts/SuisseMedium.woff2") format("woff2");
 	font-weight: 500;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: "Karlotte";
-	src: url("./assets/fonts/Karlotte.woff2") format("woff2");
+	src: url("/assets/fonts/Karlotte.woff2") format("woff2");
 	font-weight: 300;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: "Brighta";
-	src: url("./assets/fonts/BrightaNorwich.woff2") format("woff2");
+	src: url("/assets/fonts/BrightaNorwich.woff2") format("woff2");
 	font-weight: 300;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: "Karlotte";
-	src: url("./assets/fonts/KarlotteItalic.woff2") format("woff2");
+	src: url("/assets/fonts/KarlotteItalic.woff2") format("woff2");
 	font-weight: 300;
 	font-style: Italic;
 }
 
 @font-face {
 	font-family: "Meditate";
-	src: url("./assets/fonts/EditorsNote-Hairline.woff") format("woff");
+	src: url("/assets/fonts/EditorsNote-Hairline.woff") format("woff");
 	font-weight: 100;
 	font-style: normal;
 }
