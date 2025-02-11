@@ -90,7 +90,7 @@ const Header: React.FC<TextProp> = ({
 
 	return (
 		<header
-			className={`flex w-full lg:h-20 h-16 font-suisseMedium ${
+			className={`flex w-screen lg:h-20 h-16 font-suisseMedium ${
 				!isScrolled
 					? `bg-transparent ${textColor}`
 					: "bg-primary-light text-primary-dark"
