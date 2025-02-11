@@ -90,7 +90,7 @@ const Header: React.FC<TextProp> = ({
 
 	return (
 		<header
-			className={`flex w-screen lg:h-20 h-16 font-suisseMedium ${
+			className={`flex w-screen lg:h-16 h-16 font-suisseMedium ${
 				!isScrolled
 					? `bg-transparent ${textColor}`
 					: "bg-primary-light text-primary-dark"
@@ -98,7 +98,7 @@ const Header: React.FC<TextProp> = ({
 		>
 			<nav className='w-full md:px-12 px-4 flex justify-between items-center h-full relative'>
 				<div className='w-full flex flex-row justify-between items-center lg:hidden'>
-					<Link to={"/"} className='text-2xl font-karlotte uppercase block'>
+					<Link to={"/"} className='text-xl font-karlotte uppercase block'>
 						STUDIO AMAKA
 					</Link>
 					<MenuButton isScrolled={isScrolled} btnColor={btnColor} />
@@ -111,10 +111,10 @@ const Header: React.FC<TextProp> = ({
 						
 					 h-screen bg-primary-light w-screen absolute top-1 left-0 flex flex-col gap-40 lg:hidden `}
 				>
-					<div className='w-full flex flex-row justify-between items-center lg:hidden h-16 md:px-12 px-4 pr-8'>
+					<div className='w-full flex flex-row justify-between items-center lg:hidden h-16 md:px-12 px-4 pr-6'>
 						<Link
 							to={"/"}
-							className='text-2xl font-karlotte uppercase z-50 block text-primary'
+							className='text-xl font-karlotte uppercase z-50 block text-primary'
 						>
 							STUDIO AMAKA
 						</Link>
