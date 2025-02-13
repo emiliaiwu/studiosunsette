@@ -251,7 +251,7 @@ const InquiryForm: React.FC = () => {
 				) : isSuccess ? (
 					message
 				) : (
-					"Submit"
+					"Locked for Misuse"
 				)}
 			</button>
 		</form>
