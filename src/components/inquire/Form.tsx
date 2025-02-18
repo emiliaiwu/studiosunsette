@@ -242,16 +242,16 @@ const InquiryForm: React.FC = () => {
 
 			{/* Submit Button */}
 			<button
-				disabled={true}
+				// disabled={true}
 				className=' bg-primary text-white p-3 mt-4 hover-opacity flex justify-center items-center max-h-[44px] uppercase'
-				// type='submit'
+				type='submit'
 			>
 				{isSubmitting ? (
 					<span className='loader'></span>
 				) : isSuccess ? (
 					message
 				) : (
-					"Locked for Misuse"
+					"Submit"
 				)}
 			</button>
 		</form>
