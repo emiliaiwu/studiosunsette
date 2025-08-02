@@ -1,19 +1,20 @@
 import { Helmet } from "react-helmet-async";
-import AboutMe from "../components/AboutMe";
-import Cta from "../components/Cta";
-import Footer from "../components/Footer";
-import Header from "../components/header/Header";
-import BoldText from "../components/home/BoldText";
-import Hero from "../components/home/Hero";
-import Intro from "../components/home/Intro";
-import Services from "../components/home/Services";
+// import AboutMe from "../components/AboutMe";
+// import Cta from "../components/Cta";
+// import Footer from "../components/Footer";
+// import Header from "../components/header/Header";
+// import BoldText from "../components/home/BoldText";
+// import Hero from "../components/home/Hero";
+// import Intro from "../components/home/Intro";
+// import Services from "../components/home/Services";
 // import Works from "../components/home/Works";
 // import Process from "../components/Process";
-import About from "../components/home/About";
-import IntroAnimation from "../components/animation/IntroAnimation";
+// import About from "../components/home/About";
+// import IntroAnimation from "../components/animation/IntroAnimation";
+import ComingSoon from "../components/ComingSoon";
 // import Marquee from "../components/Marquee";
-import Announcement from "../components/Announcement";
-import Marquee from "../components/Marquee";
+// import Announcement from "../components/Announcement";
+// import Marquee from "../components/Marquee";
 
 const Home = () => {
 	// const [showIntro, setShowIntro] = useState<boolean>(true);
@@ -33,14 +34,15 @@ const Home = () => {
 	return (
 		<>
 			<Helmet>
-				<title>Home — Studio Amaka</title>
+				<title>Home — Studio Sunsette</title>
 				<meta
-					name='description'
+					name='Home'
 					content='Boutique web studio for female led brands'
 				/>
 			</Helmet>
-			<Announcement />
-			<Header />
+			<ComingSoon/>
+			{/* <Announcement /> */}
+			{/* <Header />
 			<main className='w-full flex justify-center items-center flex-col'>
 				<IntroAnimation />
 				<Hero />
@@ -50,14 +52,14 @@ const Home = () => {
 				<Services />
 				{/* <Works /> */}
 				{/* <Process /> */}
-				<div className='w-full py-10 bg-primary-light'>
+				{/* <div className='w-full py-10 bg-primary-light'>
 					<Marquee />
-				</div>
-				<AboutMe />
+				</div> */}
+				{/* <AboutMe />
 				<Cta />
-			</main>
+			</main> */}
 
-			<Footer />
+			{/* <Footer /> */} 
 		</>
 	);
 };

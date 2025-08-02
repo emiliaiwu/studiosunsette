@@ -236,3 +236,168 @@ export const services: ServiceProp[] = [
 		],
 	},
 ];
+
+
+type PackageProp = {
+	packageTitle: string;
+	slug: string;
+	deliverables: string[];
+	description: string;
+	investment: string[];
+	timeline: string;
+	extras: string[];
+};
+
+
+export const packages: PackageProp[] = [
+	{
+		packageTitle: "The Solrise Package",
+		slug: "solrise-package",
+		description:
+			" Perfect for new service providers, coaches, creatives, or anyone ready to launch with clarity. A beautiful, strategic site to set the tone for your brand and invite aligned clients in with grace. ",
+		deliverables: [
+			"Up to 5 Custom Pages",
+			"Responsive Design",
+			"Custom Popup",
+			"Coming Soon & NotFound Page",
+			"Basic SEO Setup",
+			"Social Media integrations",
+			"Newsletter Integration",
+			"Booking Integration",
+			"Speed Optimization",
+			"Premium CSS",
+			"2 Rounds of Refinements",
+			"14 days Post-Launch Care",
+		],
+		investment: [
+			"From $1000",
+			"Payment Plan: 25% Upfront",
+			"25% after design is finalized",
+			"50% on delivery ",
+		],
+		timeline: "2-3 weeks",
+		extras: [
+			"Monthly Website Care $100+",
+			"Copywriting $350+",
+			"Additional Page $150+",
+			"Membership/Subscription Setup: $150+",
+			"E-commerce Setup: $400+",
+			"Blog Setup: $300+",
+		],
+	},
+
+	{
+		packageTitle: "The Solshine Package",
+		slug: "solshine-package",
+		description:
+			"Perfect for growing brands ready to showcase more depth, offers, or content. Designed for businesses with multiple offerings, storytelling elements, or a portfolio to display.",
+		deliverables: [
+			"Up to 10 Custom Pages",
+			"Responsive Design",
+			"Custom Popup",
+			"Coming Soon & NotFound Page",
+			"Basic SEO Setup",
+			"Social Media integrations",
+			"Newsletter Integration",
+			"Booking Integration",
+			"Speed Optimization",
+			"Premium CSS",
+			"2 Rounds of Refinements",
+			"14 days Post-Launch Care",
+		],
+		investment: [
+			"From $1800",
+			"Payment Plan: 25% Upfront",
+			"25% after design is finalized",
+			"50% after delivery ",
+		],
+		timeline: "3-4 weeks",
+		extras: [
+			"Monthly Website Care $100+",
+			"Copywriting $350+",
+			"Additional Page $150+",
+			"Membership/Subscription Setup: $150+",
+			"E-commerce Setup: $400+",
+			"Blog Setup: $300+",
+		],
+	},
+
+	{
+		packageTitle: "The Shopify Beam",
+		slug: "shopify-beam",
+		description:
+			"Perfect for product-based brands just beginning or with a small curated collection. An elegant, minimal Shopify Lite setup for boutique brands who want to start selling online with style and ease.",
+		deliverables: [
+			"Up to 7 Custom Pages",
+			"Wire Frame Mock Up",
+			"Catalogue Set Up & Product Upload (20 items)",
+			"Up to 5 App Integrations",
+			"Shipping & Payment Data Set Up",
+			"Theme Shortlist, Installation & Customisations",
+			"Basic SEO",
+			"Premium CSS",
+			"Mobile Optimisation",
+			"Coming Soon Page",
+			"Blog Set Up",
+			"Custom Shopify Pop Up",
+			"Social Media Integration",
+			"Newsletter Integration",
+			"2 Rounds of Refinements",
+			"30 days Post-Launch Care",
+		],
+		investment: [
+			"From $1800",
+			"Payment Plan: 25% Upfront",
+			"25% after design is finalized",
+			"50% after delivery ",
+		],
+		timeline: "4-6 weeks",
+		extras: [
+			"Monthly Website Care $100+",
+			"Copywriting $350+",
+			"Additional Page $200+",
+			"Blog Setup: $300+",
+			"Product Upload: $10 per product",
+		],
+	},
+
+	{
+		packageTitle: "The Shopify Glow",
+		slug: "shopify-glow",
+		description:
+			"Perfect for established shops with a full range of products and a desire for a luxurious, on-brand shopping experience. This package supports growing ecommerce businesses who want a seamless blend of form and function.",
+		deliverables: [
+			"Up to 12 Custom Pages",
+			"Custom Section Coding",
+			"Wire Frame Mock Up",
+			"Catalogue Set Up & Product Upload (40 items)",
+			"Up to 10 App Integrations",
+			"Shipping & Payment Data Set Up",
+			"Theme Shortlist, Installation & Customisations",
+			"Basic SEO",
+			"Premium CSS",
+			"Mobile Optimisation",
+			"Coming Soon Page",
+			"Blog Set Up",
+			"Custom Shopify Pop Up",
+			"Social Media Integration",
+			"Newsletter Integration",
+			"2 Rounds of Refinements",
+			"30 days Post-Launch Care",
+		],
+		investment: [
+			"From $2800",
+			"Payment Plan: 25% Upfront",
+			"25% after design is finalized",
+			"50% after delivery ",
+		],
+		timeline: "6-8 weeks",
+		extras: [
+			"Monthly Website Care $100+",
+			"Copywriting $350+",
+			"Additional Page $200+",
+			"Blog Setup: $300+",
+			"Product Upload: $10 per product",
+		],
+	},
+];

@@ -17,7 +17,7 @@ const InquireForm = () => {
 	return (
 		<section className=' bg-primary-light w-full h-full flex justify-center items-center'>
 			<div className='flex w-full h-full justify-between flex-col lg:flex-row lg:gap-10 gap-20 max-w-[1440px]'>
-				<div className='h-screen lg:sticky top-0 w-full'>
+				<div className='h-screen lg:sticky top-0 w-full hidden'>
 					<div className='h-screen w-full flex items-center justify-center overflow-hidden'>
 						<img
 							src={img1}
@@ -28,7 +28,7 @@ const InquireForm = () => {
 					</div>
 				</div>
 				
-				<div className='w-full flex justify-center items-center md:px-12 px-8 lg:py-32 pb-32'>
+				<div className='w-full flex justify-center items-center md:px-12 px-8 lg:py-32 pb-32 py-20'>
 					<InquiryForm />
 				</div>
 			</div>

@@ -120,6 +120,28 @@ image {
 	font-weight: 100;
 	font-style: normal;
 }
+@font-face {
+	font-family: "Termina Bold";
+	src: url("/assets/fonts/TerminaTest-Bold.woff2") format("woff2");
+	font-weight: 600;
+	
+	font-style: normal;
+}
+@font-face {
+	font-family: "Termina Demi";
+	src: url("/assets/fonts/TerminaTest-Demi.woff2") format("woff2");
+	font-weight: 500;
+	
+	font-style: normal;
+}
+
+.termina {
+	font-family: "Termina Bold", sans-serif;
+}
+
+.termina2 {
+	font-family: "Termina Demi", sans-serif;
+}
 
 .serviceImage {
 	clippath: "polygon(0 0, 100% 0, 100% 0, 0 0)";

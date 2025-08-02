@@ -94,7 +94,7 @@ const Header: React.FC<TextProp> = ({
 				!isScrolled
 					? `bg-transparent ${textColor}`
 					: "bg-primary-light text-primary-dark"
-			} z-50 top-7 fixed max-w-[1920px]`}
+			} z-50 top-0 fixed max-w-[1920px]`}
 		>
 			<nav className='w-full md:px-12 px-4 flex justify-between items-center h-full relative'>
 				<div className='w-full flex flex-row justify-between items-center lg:hidden'>

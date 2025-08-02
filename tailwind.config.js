@@ -11,6 +11,8 @@ export default {
 				karlotteItalic: ["Karlotte Italic"],
 				meditate: ["Meditate"],
 				bright: ["Brighta"],
+				terminaBold: ["Termina Bold"],
+				terminaDemi: ["Termina Demi"],
 			},
 			colors: {
 				primary: {
