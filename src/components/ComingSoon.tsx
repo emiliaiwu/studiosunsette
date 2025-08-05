@@ -66,14 +66,14 @@ useEffect(() => {
 								A Refreshed Presence, Coming Soon
 							</h1>
 							<div>
-								<p className='text-xs mb-4'>
+								<p className='text-[13px] mb-4'>
 									I'm in the process of rebranding, a considered refinement of
 									how I bring stories to life through design. This isn’t just a
 									refreshed look, but a deeper expression of the values that
 									guide my approach: clarity, intention, and meaningful design
 									that resonates.
 								</p>
-								<p className='text-xs mb-8'>
+								<p className='text-[13px] mb-8'>
 									While the website is being updated, the studio remains open.
 									I'm continuing to work closely with clients to shape brands
 									and build websites. If you'd like to connect about a potential
