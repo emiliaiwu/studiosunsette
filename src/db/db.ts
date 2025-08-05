@@ -256,7 +256,7 @@ export const packages: PackageProp[] = [
 		description:
 			" Perfect for new service providers, coaches, creatives, or anyone ready to launch with clarity. A beautiful, strategic site to set the tone for your brand and invite aligned clients in with grace. ",
 		deliverables: [
-			"Up to 5 Custom Pages",
+			"Up to 5-7 Custom Pages",
 			"Responsive Design",
 			"Custom Popup",
 			"Coming Soon & NotFound Page",
@@ -270,7 +270,7 @@ export const packages: PackageProp[] = [
 			"14 days Post-Launch Care",
 		],
 		investment: [
-			"From $1000",
+			"$1500",
 			"Payment Plan: 25% Upfront",
 			"25% after design is finalized",
 			"50% on delivery ",
@@ -306,7 +306,7 @@ export const packages: PackageProp[] = [
 			"14 days Post-Launch Care",
 		],
 		investment: [
-			"From $1800",
+			"From $2000",
 			"Payment Plan: 25% Upfront",
 			"25% after design is finalized",
 			"50% after delivery ",
@@ -346,7 +346,7 @@ export const packages: PackageProp[] = [
 			"30 days Post-Launch Care",
 		],
 		investment: [
-			"From $1800",
+			"From $2000",
 			"Payment Plan: 25% Upfront",
 			"25% after design is finalized",
 			"50% after delivery ",
@@ -367,7 +367,7 @@ export const packages: PackageProp[] = [
 		description:
 			"Perfect for established shops with a full range of products and a desire for a luxurious, on-brand shopping experience. This package supports growing ecommerce businesses who want a seamless blend of form and function.",
 		deliverables: [
-			"Up to 12 Custom Pages",
+			"Up to 10 Custom Pages",
 			"Custom Section Coding",
 			"Wire Frame Mock Up",
 			"Catalogue Set Up & Product Upload (40 items)",
@@ -386,7 +386,7 @@ export const packages: PackageProp[] = [
 			"30 days Post-Launch Care",
 		],
 		investment: [
-			"From $2800",
+			"From $2500",
 			"Payment Plan: 25% Upfront",
 			"25% after design is finalized",
 			"50% after delivery ",
