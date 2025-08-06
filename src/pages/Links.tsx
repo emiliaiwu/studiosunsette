@@ -102,20 +102,20 @@ const Links = () => {
 			url: "https://studiosunsette.com",
 		},
 		{
-			label: "THE SOLRISE PACKAGE",
-			url: "https://studiosunsette.com/links/solrise-package",
+			label: "THE SUNRISE PACKAGE",
+			url: "https://studiosunsette.com/links/sunrise-package",
 		},
 		{
-			label: "THE SOLSHINE PACKAGE",
-			url: "https://studiosunsette.com/links/solshine-package",
+			label: "THE SUNSHINE PACKAGE",
+			url: "https://studiosunsette.com/links/sunshine-package",
 		},
 		{
-			label: "THE SHOPIFY BEAM",
-			url: "https://studiosunsette.com/links/shopify-beam",
+			label: "THE SHOPIFY LITE PACKAGE",
+			url: "https://studiosunsette.com/links/shopify-lite",
 		},
 		{
-			label: "THE SHOPIFY GLOW",
-			url: "https://studiosunsette.com/links/shopify-glow",
+			label: "THE SHOPIFY LUXE PACKAGE",
+			url: "https://studiosunsette.com/links/shopify-luxe",
 		},
 		{
 			label: "INQUIRE HERE",
