@@ -60,7 +60,7 @@ const PackageDetail = () => {
 					</ul>
 				</div>
 
-				{/* <div>
+				{ <div>
 					<h2 className='font-terminaBold text-[10px] uppercase mb-2'>
 						Investment
 					</h2>
@@ -72,7 +72,7 @@ const PackageDetail = () => {
 							</li>
 						))}
 					</ul>
-				</div> */}
+				</div> }
 				<div className='border-[0.5px] border-primary px-6 h-8 inline-flex justify-center items-center font-terminaDemi'>
 					<Link
 						to={"/links"}

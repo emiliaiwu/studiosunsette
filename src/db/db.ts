@@ -243,7 +243,7 @@ type PackageProp = {
 	slug: string;
 	deliverables: string[];
 	description: string;
-	
+	investment: string[];
 	timeline: string;
 	extras: string[];
 };
@@ -256,7 +256,7 @@ export const packages: PackageProp[] = [
 		description:
 			" Perfect for new service providers, coaches, creatives, or anyone ready to launch with clarity. A beautiful, strategic site to set the tone for your brand and invite aligned clients in with grace. ",
 		deliverables: [
-			"Up to 5-7 Custom Pages",
+			"Up to 5 Custom Pages",
 			"Responsive Design",
 			"Custom Popup",
 			"Coming Soon & NotFound Page",
@@ -269,7 +269,13 @@ export const packages: PackageProp[] = [
 			"2 Rounds of Refinements",
 			"14 days Post-Launch Care",
 		],
-		
+		investment: [
+			"$1250",
+			"Payment Plan: 25% Upfront",
+			"25% after design is finalized",
+			"50% on delivery ",
+		],
+
 		timeline: "2-3 weeks",
 		extras: [
 			"Monthly Website Care $100+",
@@ -300,7 +306,13 @@ export const packages: PackageProp[] = [
 			"2 Rounds of Refinements",
 			"14 days Post-Launch Care",
 		],
-		
+		investment: [
+			"From $2000",
+			"Payment Plan: 25% Upfront",
+			"25% after design is finalized",
+			"50% after delivery ",
+		],
+
 		timeline: "3-4 weeks",
 		extras: [
 			"Monthly Website Care $100+",
@@ -318,24 +330,25 @@ export const packages: PackageProp[] = [
 		description:
 			"Perfect for product-based brands just beginning or with a small curated collection. An elegant, minimal Shopify Lite setup for boutique brands who want to start selling online with style and ease.",
 		deliverables: [
-			"Up to 7 Custom Pages",
-			"Wire Frame Mock Up",
+			"Up to 5 Custom Pages",
 			"Catalogue Set Up & Product Upload (20 items)",
-			"Up to 5 App Integrations",
 			"Shipping & Payment Data Set Up",
-			"Theme Shortlist, Installation & Customisations",
+			"Free Theme Customizations",
 			"Basic SEO",
 			"Premium CSS",
 			"Mobile Optimisation",
 			"Coming Soon Page",
-			"Blog Set Up",
 			"Custom Shopify Pop Up",
-			"Social Media Integration",
-			"Newsletter Integration",
 			"2 Rounds of Refinements",
-			"30 days Post-Launch Care",
+			"14 days Post-Launch Care",
 		],
-		
+		investment: [
+			"From $1500",
+			"Payment Plan: 25% Upfront",
+			"25% after design is finalized",
+			"50% after delivery ",
+		],
+
 		timeline: "4-6 weeks",
 		extras: [
 			"Monthly Website Care $100+",
@@ -353,12 +366,11 @@ export const packages: PackageProp[] = [
 			"Perfect for established shops with a full range of products and a desire for a luxurious, on-brand shopping experience. This package supports growing ecommerce businesses who want a seamless blend of form and function.",
 		deliverables: [
 			"Up to 12 Custom Pages",
-			"Custom Section Coding",
+			"Premium Theme Customization",
 			"Wire Frame Mock Up",
-			"Catalogue Set Up & Product Upload (40 items)",
-			"Up to 10 App Integrations",
+			"Catalogue Set Up & All Product Upload",
+			"Up to 5 App Integrations",
 			"Shipping & Payment Data Set Up",
-			"Theme Shortlist, Installation & Customisations",
 			"Basic SEO",
 			"Premium CSS",
 			"Mobile Optimisation",
@@ -370,7 +382,13 @@ export const packages: PackageProp[] = [
 			"2 Rounds of Refinements",
 			"30 days Post-Launch Care",
 		],
-		
+		investment: [
+			"From $2500",
+			"Payment Plan: 25% Upfront",
+			"25% after design is finalized",
+			"50% after delivery ",
+		],
+
 		timeline: "6-8 weeks",
 		extras: [
 			"Monthly Website Care $100+",
