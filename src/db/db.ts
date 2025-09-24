@@ -251,8 +251,8 @@ type PackageProp = {
 
 export const packages: PackageProp[] = [
 	{
-		packageTitle: "The Sunrise Package",
-		slug: "sunrise-package",
+		packageTitle: "Signature Website",
+		slug: "signature-website",
 		description:
 			" Perfect for new service providers, coaches, creatives, or anyone ready to launch with clarity. A beautiful, strategic site to set the tone for your brand and invite aligned clients in with grace. ",
 		deliverables: [
@@ -288,8 +288,8 @@ export const packages: PackageProp[] = [
 	},
 
 	{
-		packageTitle: "The Sunshine Package",
-		slug: "sunshine-package",
+		packageTitle: "Signature Luxe Website",
+		slug: "signature-luxe-website",
 		description:
 			"Perfect for growing brands ready to showcase more depth, offers, or content. Designed for businesses with multiple offerings, storytelling elements, or a portfolio to display.",
 		deliverables: [
